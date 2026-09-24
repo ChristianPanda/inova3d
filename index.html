@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inova3D — Impressão 3D com intenção</title>
+  <meta name="description" content="Inova3D é um atelier de impressão 3D. Portefólio, protótipos e peças à medida. Loja em preparação." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080b10'/%3E%3Cpath d='M16 44 L32 12 L48 44 Z' fill='none' stroke='%2326e0c8' stroke-width='3'/%3E%3Ccircle cx='32' cy='36' r='4' fill='%23ff6b3d'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="logo" href="#topo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M6 28 L18 6 L30 28 Z" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="18" cy="22" r="2.4" fill="#ff6b3d"/></svg>
+      </span>
+      Inova3D
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portefólio</a>
+      <a href="#processo">Processo</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portefólio</a>
+    <a href="#processo">Processo</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <main id="topo">
+    <section class="hero">
+      <p class="eyebrow">Atelier de impressão 3D · Fase piloto</p>
+      <h1>Ideias que saem<br /><em>do ecrã</em> para a mesa.</h1>
+      <p class="lead">A Inova3D nasce pequena de propósito: um espaço para mostrar peças, testar acabamentos e conversar sobre o que queres imprimir. Ainda não vendemos online — por agora, isto é apresentação e portefólio.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#portfolio">Ver peças</a>
+        <a class="btn ghost" href="#contacto">Pedir um orçamento</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>FDM</strong><span>camada a camada</span></div>
+        <div><strong>PLA / PETG</strong><span>materiais de partida</span></div>
+        <div><strong>Sob medida</strong><span>do ficheiro à peça</span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Protótipos</span><span>Figurinos</span><span>Decoração</span><span>Peças técnicas</span><span>Personalização</span><span>Iteração rápida</span>
+        <span>Protótipos</span><span>Figurinos</span><span>Decoração</span><span>Peças técnicas</span><span>Personalização</span><span>Iteração rápida</span>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-copy">
+        <p class="eyebrow">Sobre</p>
+        <h2>Uma oficina de testes com olhar de produto.</h2>
+        <p>A Inova3D começa como um projeto de bancada: poucas máquinas, muito cuidado com tolerâncias, orientação de impressão e acabamento. O objectivo não é parecer uma loja enorme — é construir um portefólio honesto e perceber, peça a peça, o que vale a pena produzir.</p>
+        <p>Quando a loja abrir, vais encontrar aqui catálogo e encomenda. Até lá, o site serve para te mostrar o que já sai da impressora e para receberes pedidos pontuais.</p>
+        <ul class="pills">
+          <li>Sem checkout (ainda)</li>
+          <li>Encomendas por conversa</li>
+          <li>Portugal</li>
+        </ul>
+      </div>
+      <aside class="about-card">
+        <h3>O que isto é</h3>
+        <p>Um cartão de visita digital. Um sítio para o trabalho existir antes da loja.</p>
+        <h3>O que isto não é</h3>
+        <p>Uma loja com stock, carrinho ou pagamentos. Nada se compra neste site — de propósito.</p>
+      </aside>
+    </section>
+
+    <section class="services" id="servicos">
+      <header class="section-head">
+        <p class="eyebrow">Serviços</p>
+        <h2>Três formas de trabalhar connosco.</h2>
+      </header>
+      <div class="cards">
+        <article>
+          <span class="idx">01</span>
+          <h3>Peça a partir de ficheiro</h3>
+          <p>Envias STL, 3MF ou STEP. Ajustamos escala, suportes e material. Devolvemos a peça com as notas de impressão.</p>
+        </article>
+        <article>
+          <span class="idx">02</span>
+          <h3>Protótipo rápido</h3>
+          <p>Para testar forma, encaixe ou ergonomia antes de investir noutra produção. Iterações curtas, feedback directo.</p>
+        </article>
+        <article>
+          <span class="idx">03</span>
+          <h3>Série pequena</h3>
+          <p>Quando um modelo já está afinado: algumas unidades iguais, mesma cor, mesmo padrão de qualidade. Sem stock infinito.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <header class="section-head">
+        <p class="eyebrow">Portefólio</p>
+        <h2>Peças de referência.</h2>
+        <p class="muted">Imagens de amostra para dar o tom do atelier — serão substituídas pelas tuas impressões reais.</p>
+      </header>
+      <div class="filters" role="tablist">
+        <button class="filter is-active" data-filter="all">Tudo</button>
+        <button class="filter" data-filter="figura">Figuras</button>
+        <button class="filter" data-filter="deco">Decoração</button>
+        <button class="filter" data-filter="tech">Técnico</button>
+      </div>
+      <div class="grid">
+        <figure class="tile tall" data-cat="figura">
+          <img src="https://images.unsplash.com/photo-1631541909061-571b9980c4c5?auto=format&fit=crop&w=900&q=80" alt="Miniatura impressa em resina com detalhe fino" />
+          <figcaption>
+            <span>Figuras</span>
+            <strong>Miniatura de detalhe</strong>
+          </figcaption>
+        </figure>
+        <figure class="tile" data-cat="deco">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" alt="Forma geométrica abstrata impressa em 3D" />
+          <figcaption>
+            <span>Decoração</span>
+            <strong>Volume geométrico</strong>
+          </figcaption>
+        </figure>
+        <figure class="tile" data-cat="tech">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" alt="Impressora 3D em funcionamento" />
+          <figcaption>
+            <span>Técnico</span>
+            <strong>Protótipo em bancada</strong>
+          </figcaption>
+        </figure>
+        <figure class="tile" data-cat="figura">
+          <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&w=900&q=80" alt="Objecto impresso em filamento colorido" />
+          <figcaption>
+            <span>Figuras</span>
+            <strong>Peça articulada</strong>
+          </figcaption>
+        </figure>
+        <figure class="tile wide" data-cat="deco">
+          <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1400&q=80" alt="Filamentos e peças numa oficina de impressão 3D" />
+          <figcaption>
+            <span>Decoração</span>
+            <strong>Estudo de cor e textura</strong>
+          </figcaption>
+        </figure>
+        <figure class="tile" data-cat="tech">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="Componente técnico a ser impresso" />
+          <figcaption>
+            <span>Técnico</span>
+            <strong>Peça funcional</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="process" id="processo">
+      <header class="section-head">
+        <p class="eyebrow">Processo</p>
+        <h2>Do pedido à peça, sem ruído.</h2>
+      </header>
+      <ol class="steps">
+        <li>
+          <h3>Conversamos</h3>
+          <p>Dizes o que precisas: tamanho, uso, cor, prazo. Se já tens ficheiro, melhor.</p>
+        </li>
+        <li>
+          <h3>Afinamos</h3>
+          <p>Revisamos o modelo, escolhemos material e orientação. Evitamos surpresas na mesa.</p>
+        </li>
+        <li>
+          <h3>Imprimimos</h3>
+          <p>Camada a camada, com o perfil certo. Se falhar, reimprimimos — não enviamos lixo.</p>
+        </li>
+        <li>
+          <h3>Entregamos</h3>
+          <p>Acabamento mínimo (suportes, rebarba) e envio ou levantamento. Loja online vem depois.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="cta" id="contacto">
+      <p class="eyebrow">Contacto</p>
+      <h2>Tens um ficheiro ou uma ideia?</h2>
+      <p class="lead">Escreve com medidas, material preferido e para que serve a peça. Respondemos com viabilidade e um valor estimado — sem compromisso e sem carrinho.</p>
+      <form class="contact" id="contactForm">
+        <label>
+          Nome
+          <input type="text" name="nome" required placeholder="O teu nome" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="nome@email.com" />
+        </label>
+        <label class="full">
+          Pedido
+          <textarea name="mensagem" rows="5" required placeholder="O que queres imprimir, dimensões, cor, prazo…"></textarea>
+        </label>
+        <button type="submit" class="btn primary">Abrir email</button>
+        <p class="form-note">O formulário abre o teu cliente de email. Nada é enviado para um servidor — o site é só apresentação.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Inova3D</strong>
+      <p>Impressão 3D em fase piloto. Loja em preparação.</p>
+    </div>
+    <p class="tiny">© <span id="year"></span> Inova3D. Site de apresentação — sem vendas online.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
